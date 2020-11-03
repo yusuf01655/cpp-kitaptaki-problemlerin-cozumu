@@ -57,7 +57,18 @@ void UzaktanKumanda::kapamaKomutuAta(SanalSinif* nsn){
     kapaDizi[0]=nsn;
 }
 int main(){
-
-
-return 0;
+    UzaktanKumanda kumanda;
+    TelevizyonAcKomutu tvAcKomutu;
+    TelevizyonKapaKomutu tvKapaKomutu;
+    kumanda.acmaKomutuAta(&tvAcKomutu);
+    kumanda.kapamaKomutuAta(&tvKapaKomutu);
+    kumanda.ac();
+    kumanda.kapa();
+    OtoparkKapiAcKomutu kapiAcKomutu;
+    OtoparkKapiKapaKomutu kapiKapaKomutu;
+    kumanda.acmaKomutuAta(&kapiAcKomutu);
+    kumanda.kapamaKomutuAta(&kapiKapaKomutu);
+    kumanda.ac();
+    kumanda.kapa();
+    return 0;
 }
